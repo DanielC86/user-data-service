@@ -6,4 +6,8 @@ CREATE TABLE messages (
 );
 
 INSERT INTO messages (description) VALUES
-  ('Hello World!');
+  ('Hello World!'),
+  ('Hello World2!'),
+  ('Hello World3!'),
+  ('Hello World4!')
+  ;

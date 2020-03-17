@@ -8,7 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-@Repository("MessagesDAO")
+@Repository
 public class MessagesDAOImpl implements MessagesDAO{
 
     //define entity manager
@@ -35,7 +35,11 @@ public class MessagesDAOImpl implements MessagesDAO{
 
     @Override
     public Messages findById(int messageId) {
-        return null;
+
+        //get message by id
+        Messages theMessage = entityManager.find(Messages.class, messageId);
+
+        return theMessage;
     }
 
     @Override

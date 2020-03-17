@@ -27,8 +27,9 @@ public class MessagesServiceImpl implements MessagesService{
     }
 
     @Override
+    @Transactional
     public Messages findById(int messageId) {
-        return null;
+        return messagesDAO.findById(messageId);
     }
 
     @Override
