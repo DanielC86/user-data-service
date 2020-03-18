@@ -3,6 +3,7 @@ package com.daniel.czajka.userdataservice.controller;
 import com.daniel.czajka.userdataservice.entity.Messages;
 import com.daniel.czajka.userdataservice.service.MessagesService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Arrays;
 import java.util.List;
 
+@RefreshScope
 @RestController
 @RequestMapping("/api")
 public class MessagesController {
