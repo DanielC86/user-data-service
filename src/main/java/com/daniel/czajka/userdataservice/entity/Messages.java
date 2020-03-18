@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "messages")
-public class Messages {
+public @Data class Messages {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +16,7 @@ public class Messages {
     @Column(name = "description")
     private String description;
 
-    public Messages(){
+    /*public Messages(){
     }
 
     public Messages(String description) {
@@ -45,5 +45,5 @@ public class Messages {
                 "id=" + id +
                 ", description='" + description + '\'' +
                 '}';
-    }
+    }*/
 }
