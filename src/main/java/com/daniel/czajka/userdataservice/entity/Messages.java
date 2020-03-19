@@ -1,9 +1,11 @@
 package com.daniel.czajka.userdataservice.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+@NoArgsConstructor
 @Entity
 @Table(name = "messages")
 public @Data class Messages {
